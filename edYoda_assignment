@@ -1,0 +1,37 @@
+1. Commands used during the assignment. 
+-docker attach 
+-docker ps
+-docker run
+-docker images
+-docker pull
+-kubectl get po -o wide
+-kubectl get svc
+-kubectl upgrade
+-kubectl edit
+-kubectl set image
+-kubectl log
+-kubectl delete po 
+-kubectl apply -f .
+-kubectl get all 
+-git clone
+-grep 
+-ssh
+-apt-get install
+-apt get update
+-curl
+-vi
+-cat
+
+2. snapshot of logs 
+
+3. your comment on WHY result app STOPPED working after db pod stop
+-Because after deleting db pod all votes data is erased and result app is in default state 50:50.
+
+4. your answer to HOW YOU MADE THE RESULT POD work.
+-By restarting the worker pod's
+
+5. Some jargons (just names are enough- dont need sentences) that you learnt from the  Training session
+-Docker, docker Hub , docker images , Docker container
+- kubernetes pods, clusters, services, deployment
+-voulmes, Networking, schduling
+-Helm
