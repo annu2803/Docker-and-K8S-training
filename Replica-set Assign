@@ -1,0 +1,18 @@
+1-We need to make sure that all pods should be healthy and in running status using some commands.
+  -watch kubectl get po,svc -o wide -n deployment_namespace
+2-if pods are in imagepullbackoff then pods are not able to get the image from the repo, in that case we need to do patching in 3 steps-
+  -docker load
+  -docker tag 
+  -docker push
+3-We will check the pod configuration,container port also to verify its listening port.
+  -kubectl describe pod pod_name
+4-We can check the connectivity of the perticular Nodeport, it is accessable or not outside the cluster 
+  -curl https://ip:port_num
+5-I'll check the Logs and configuration of yaml files
+  -kubectl log 
+  -kubectl get cm -n namespace(to list all the config's )
+  -kubectl edit cm config_mgmt -n my_namespace(to verify and edit the configs of deployment)
+
+
+  
+
