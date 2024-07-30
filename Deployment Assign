@@ -1,0 +1,8 @@
+1-I'll update the image in deployment.yaml file.
+
+2-I'll apply the changes with updated deployment.yaml file
+    -kubeclt apply -f deployment.yaml
+
+3-I'll check the deployment status using commands
+    -kubectl get po
+    -kubectl get deployment
