@@ -1,0 +1,5 @@
+the main advantage of using daemon set over replica set is-
+    -it will only allow 1 pod for every node which is usefull for checking logs for every node.
+    - daemon set simplifies the deployment over replica set
+    -we dont need to ensure pods are distributed to every node or not in daemon set
+In any deployment whenever we need to achieve above mentioned properties we can use daeon set like used in log collector method .
